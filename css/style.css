@@ -6,7 +6,6 @@ body {
     background: #3B5382;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3B5382, #32BBAA);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3B5382, #32BBAA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
     left: -420px; 
     top: -584px;
 }
@@ -29,6 +28,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
+.title hr {
+    border: 1.5px solid white;
+}
 .title p {
     font-family: 'Roboto Condensed';
     font-style: normal;
@@ -39,8 +41,16 @@ body {
     width: 500px;
     margin: 0 auto;
     padding-bottom: 5%;
+    line-height: 45px;
+    margin-top: -22px;
 }
-
+.title span {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color:#FFF;
+}
 .content {
     display: flex;
     width: 100%;
@@ -80,4 +90,40 @@ body {
     font-size: 0.6rem;
     color:#3B5382;
     text-align: left;
+}
+
+@media only screen and (max-width:600px) {
+    .content-container {
+        display: block;
+        min-height: 80%;
+        max-width: 100%;
+        margin: auto;
+        padding: 2%;
+    }    
+    .title {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .title p {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4.9vw;
+        color:#FFF;
+        text-align: center;
+        width: 200px;
+        margin: 0 auto;
+        padding-bottom: 5%;
+        margin-top: -12px;
+    }
+    .title span {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 4.1vw;
+        color:#FFF;
+    }
+    .title hr {
+        border: 1.5px solid white;
+    }
 }
