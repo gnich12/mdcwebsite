@@ -28,6 +28,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
+.title hr {
+    border: 1.5px solid white;
+}
 .title p {
     font-family: 'Roboto Condensed';
     font-style: normal;
@@ -38,8 +41,16 @@ body {
     width: 500px;
     margin: 0 auto;
     padding-bottom: 5%;
+    line-height: 45px;
+    margin-top: -22px;
 }
-
+.title span {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color:#FFF;
+}
 .content {
     display: flex;
     width: 100%;
