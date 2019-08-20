@@ -13,15 +13,14 @@ body {
     display: block;
     max-width: 65%;
     margin: 0 auto;
-    padding: 5em;
+    padding: 3em;
 }
 
 .logo {
     display: block;
     margin: 0 auto;
-    padding-bottom: 5%;
-    min-height: 50px;
-    max-height: 178px;
+    height: 150px;
+    margin-bottom: 5%;
 }
 
 .title {
@@ -60,6 +59,15 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 3%;
+}
+
+.main-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 80%;
 }
 
 .main-title {
@@ -69,6 +77,15 @@ body {
     font-size: 2rem;
     color:#32BBAA;
     text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.green-line {
+    background-color: #32BBAA;
+    width: 34%;
+    height: 0.2rem;
+    align-self: center;
 }
 
 .inside-container {
@@ -76,40 +93,70 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     width: 80%;
+    background-color: #FFF;
 }
+
 
 .inside-title {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 300;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color:#32BBAA;
     text-align: left;
+    padding-top: 0;
+    margin-right: 2rem;
 }
 
 .contact-text {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color:#3B5382;
     text-align: left;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    width: 30%;
+}
+
+.contact-text img {
+    margin-right: 5%;
 }
 
 .first-line {
-
+    display: flex;
+    min-width: 60%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
 }
 
-.second-line {
+.arrow {
+    margin: 0;
+    padding: 0;
+    width: 1.8rem;
+}
 
+.second-line  {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-content: center;
 }
 
 .third-line {
-
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-content: flex-end;
 }
 
 .appstore-tag {
-
+ 
 }
 
 .playstore-tag {
