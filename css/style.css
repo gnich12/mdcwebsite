@@ -51,6 +51,11 @@ body {
     font-size: 1.8rem;
     color:#FFF;
 }
+
+.mobile-only-title {
+    display: none;
+}
+
 .content {
     display: flex;
     width: 100%;
@@ -201,12 +206,19 @@ body {
         margin-top: -10px;
     }
     .title span {
+        display: none;
+    }
+    .mobile-only-title {
         display: block;
+        width: 90%;
         font-family: 'Roboto Condensed';
         font-style: normal;
         font-weight: 300;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        text-align: center;
         color:#FFF;
+        margin: 0 auto;
+        margin-bottom: 5%;
     }
 
     .main-title {
