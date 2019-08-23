@@ -139,8 +139,13 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-content: center;
+    cursor: pointer;
 }
-
+.first-line a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
 .arrow {
     margin: 0;
     padding: 0;
