@@ -1,5 +1,4 @@
 body {
-    
     height: 100%;
     margin: 0;
     padding: 0;
@@ -26,9 +25,10 @@ body {
 .title {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 4rem
 }
 .title hr {
-    border: 1.5px solid white;
+    border: 1px solid white;
 }
 .title p {
     font-family: 'Roboto Condensed';
@@ -161,6 +161,43 @@ body {
 
 .playstore-tag {
 
+}
+
+@media (max-width: 769px) {
+    .content-container {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1em;
+    }
+    .title {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        margin-top: 3rem;
+    }
+    .title hr {
+        border: 1px solid white;
+    }
+    .title p {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12pt;
+        color:#FFF;
+        text-align: center;
+        width: 220px;
+        margin: 0 auto;
+        padding-bottom: 5%;
+        line-height: 35px;
+        margin-top: -10px;
+    }
+    .title span {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12pt;
+        color:#FFF;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
