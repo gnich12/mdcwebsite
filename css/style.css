@@ -115,12 +115,12 @@ body {
     font-size: 1.5rem;
     color:#3B5382;
     text-align: left;
-    margin: 0 auto;
+    
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-content: center;
-    width: 30%;
+    align-content: flex-start;
+
 }
 
 .contact-text img {
@@ -151,7 +151,7 @@ body {
 .third-line {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-content: flex-end;
 }
 
@@ -163,7 +163,7 @@ body {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .content-container {
         display: block;
         max-width: 100%;
@@ -197,5 +197,13 @@ body {
         font-weight: 300;
         font-size: 12pt;
         color:#FFF;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    .third-line {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
     }
 }
